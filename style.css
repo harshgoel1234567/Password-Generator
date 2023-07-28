@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y:hidden
+
+}
+.indicator{
+    height:20px;
+    width:20px;
+    margin-top: 4px;
+    background-color:var(--vb-yellow);
+    border-radius:50%;
+}
+:root {
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+    --vb-yellow: hsl(52, 100%, 62%);
+    --pl-white: hsl(0, 0%, 100%);
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+.container
+{
+    background-color: var(--lt-violet);
+    height:100vw;
+   
+
+
+    
+
+}
+.cont{
+    margin-top: 1.5%;
+    margin-left: 40%;
+    color: aliceblue;
+    font-size: 22px;
+}
+h1
+{
+    margin-left: 32px;
+    font-size: 30px;
+    opacity: 0.9;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.display-container
+{
+    
+    
+    margin-top:1rem;
+margin-bottom: 1rem;
+
+
+    color: var(--vb-yellow);
+    
+    border-radius:17px;
+    border-bottom: 5px solid var(--vb-violet);
+    
+    background-color: var(--dk-violet);
+    padding:8px;
+    width:440px;
+
+    height:80px;
+    
+}
+.display-container input{
+    background-color: var(--dk-violet);
+    border: none;
+    height:120px;
+    width:220px;
+    color: var(--vb-yellow);
+    
+   
+    
+}
+.display-container input[data-passwordDisplay] {
+    color: var(--vb-yellow);
+    position: relative;
+    font-size: 24px;
+    opacity: 0.75;
+    bottom: 26px;
+    left: 20px;
+    opacity: 0.8;
+}
+.display-container ::placeholder
+{
+    color:var(--vb-yellow);
+    position: relative;
+    font-size: 24px;
+    opacity: 0.75;
+    bottom: 26px;
+    left:20px;
+    top:0.4px;
+    opacity:0.8
+    
+
+}
+.btn1{
+    border: none;
+    position: relative;
+    bottom: 25%;
+    margin-left: 28%;
+ 
+}
+.img{
+    border:none;
+    background-color: var(--dk-violet);
+width:35px;
+font-size: 1rem;
+display: block;
+}
+
+.input-container{
+   
+    margin-top: 30px;
+    background-color: var(--dk-violet);
+    padding:20px;
+    height:440px;
+    width:450px;
+    border-radius: 15px;
+    font-size: 22px;
+    
+
+}
+.input-container p{
+    font-size: 25px;
+}
+.length-container{
+
+    display: flex;
+    justify-content:space-between;
+    padding:6px;
+    margin-bottom: 19px;
+    
+
+}
+.yellow{
+    color:var(--vb-yellow)
+}
+.range{
+    width:100%;
+    margin-bottom: 21px;
+
+}
+.check{
+    padding:12px;
+    gap:7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  
+}
+.strength-container{
+    margin-top: 2px;
+    display: flex;
+    justify-content:space-between;
+    padding:6px;
+    margin-bottom: 19px;
+    margin-left: 4px;
+    font-size: 6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.btn{
+    color: var(--vb-yellow);
+    background-color: var(--vb-violet);
+    width: 410px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    border-radius: 12px;
+    border-bottom:5px solid var(--vb-yellow);
+    
+   
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 19px; /* Change the width of the checkbox */
+    height: 19px; /* Change the height of the checkbox */
+    border: 2px solid var(--vb-cyan); /* Add a border to create a checkbox outline */
+    border-radius: 4px; /* Add some border radius for a slightly rounded appearance */
+    outline: none; /* Remove focus outline */
+    cursor: pointer;
+    position: relative;
+    right: 7px;
+    
+    
+
+  }
+  input[type="checkbox"]::before {
+    content: "✔"; /* Unicode for checkmark symbol */
+    display:contents;
+    position:absolute;
+    color:black; /* Change the color of the tick when the checkbox is checked */
+   
+    width: 9px; /* Adjust the size of the tick */
+    height: 18px; /* Adjust the size of the tick */
+    font-size: 13px; /* Adjust the size of the tick */
+    
+  }
+  input[type="checkbox"]:checked {
+    background-color: var(--vb-cyan); /* Change the background color when the checkbox is checked */
+  }
+  
+  /* Show the tick when the checkbox is checked */
+ 
+.btn1{
+
+cursor: pointer;
+
+}
+.active {
+    /* Your CSS styles for the .active class here */
+    /* For example: */
+    background-color:red;
+    color: #ffffff;
+    /* Add any other styles you want */
+  }
+  /* Customize the appearance of the range input */
+input[type="range"].range {
+    /* Remove default track styles */
+    -webkit-appearance: none;
+   
+    appearance: none;
+    /* Set the track height and color */
+    height: 25px;
+    /* Set the thumb (handle) styles */
+ 
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--vb-violet); /* Gray track color */
+    /* Adjust the thumb width */
+  
+    position: relative;
+    cursor: pointer;
+  }
+  input[type="range"].range::-webkit-slider-thumb
+  {
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: yellow;
+    height:25px;
+    width:25px;
+    cursor: pointer;
+
+    
+    border-radius: 50%;
+
+  }
+  
+
+  
+  
+
+  
